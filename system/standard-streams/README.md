@@ -75,13 +75,13 @@ Make it do these things:
     2   # That's stderr
 
 
-## How to test:
+## Does my solution work?
 
-Run the test.sh with a tiny test suite.
+Run `test.sh`, and give it as first parameter the path to your program. (The path, not just the name.)
 
     es-ulysses/unix-stdin-stdout-stderr$ ./test.sh ./myprog
 
-Use the reference.sh to see a working version and the expected output:
+`solution.sh` contains a reference solution in bash script. 
 
     es-ulysses/unix-stdin-stdout-stderr$ ./test.sh ./solution.sh 
     I. Piping numbers thru stdin, expecting them on stdout as is
