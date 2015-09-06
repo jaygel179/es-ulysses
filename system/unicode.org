@@ -1,0 +1,103 @@
+* Unicode
+* History
+** ASCII
+[[./ascii-table.png]]
+
+[[https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/ASCII-Table-wide.svg/2000px-ASCII-Table-wide.svg.png][ASCII Table @ Wikipedia]]
+** Code-pages
+*** bleh!
+** 16-bit UCS-2
+** Unicode
+* Unicode Online
+** Standard
+http://www.unicode.org/versions/Unicode8.0.0/
+* Codepoints
+Just numbers. Not glyphs.
+
+One number per character.
+1,114,112
+
+* Example: U+0041
+
+0x41 = 65
+
+LATIN CAPITAL LETTER A
+
+http://www.unicode.org/charts/PDF/U0000.pdf
+* Example: U+03B1
+** Character charts
+http://www.unicode.org/charts/charindex.html
+* Example: U+1F354
+
+0x1F354 = 127828
+🍔
+
+http://www.unicode.org/charts/PDF/U1F300.pdf
+* 17 Planes
+65,536 code points per plane
+
+= 0x10000
+
+* BMP
+The first plane, plane 0, the Basic Multilingual Plane (BMP)
+_contains characters for almost all modern languages_ …
+
+[[https://en.wikipedia.org/wiki/Plane_%2528Unicode%2529#Basic_Multilingual_Plane][source]]
+
+** What's in it?
+[[./unicode-planes.png]]
+
+[[https://en.wikipedia.org/wiki/Plane_%2528Unicode%2529#/media/File:Roadmap_to_Unicode_BMP.svg][source]]
+
+** Supplementary
+Others:
+***
+* Examples
+
+** Tagalog
+http://www.unicode.org/charts/PDF/U1700.pdf
+
+** Cats
+
+*** Happy Cat 😾 (U+1f638
+*** Sad Cat 😸 (U+1f63e)
+
+
+* Code Points in Bytes?
+
+-> Encodings
+
+** How many bits for 1,114,112 code points?
+
+2^21 = 2097152
+
+-> 3 bytes
+
+** ☹
+
+* Unicode Encodings
+** UTF-7
+** UTF-8
+** UTF-16
+** UTF-32
+* UTF-8
+https://en.wikipedia.org/wiki/UTF-8#Description
+* UTF-16
+** 1x 16-bit
+U+0000 to U+D7FF and U+E000 to U+FFF
+** 2x 16-bit
+U+10000 to U+10FFFF
+* --------- The basic part ends here ---------
+** Thanks ☺
+* UTF-16 (Surrogate Pairs)
+* UTF-16 (BOM)
+* Diagraphs / Ligatures
+http://www.unicode.org/faq/ligature_digraph.html#Dig2
+* More links
+** Joel on Software
+http://www.joelonsoftware.com/articles/Unicode.html
+
+http://stackoverflow.com/questions/222386/what-do-i-need-to-know-about-unicode
+http://lucumr.pocoo.org/2014/1/5/unicode-in-2-and-3/
+http://www.ianbicking.org/why-python-unicode-sucks.html
+http://mortoray.com/2013/11/27/the-string-type-is-broken/
