@@ -1,5 +1,9 @@
 # es-ulysses
-Challenges for us developers. To strive, to seek, to find, and not to yield.
+Life is a journey. As is learning.
+
+This repository contains challenges for us developers. \o/
+
+*To strive, to seek, to find, and not to yield.*
 
 ## Ideas
 
